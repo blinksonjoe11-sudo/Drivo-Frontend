@@ -627,7 +627,10 @@ export default function DrivoMap({
 
       {/* Route info pill */}
       {routeInfo && (
-        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 pointer-events-none">
+        <div
+          className="absolute top-3 left-1/2 -translate-x-1/2 z-10 pointer-events-none"
+          style={{ top: "calc(12px + env(safe-area-inset-top, 0px))" }}
+        >
           <div className="glass-light dark:glass-dark rounded-full px-4 py-1.5 shadow-float flex items-center gap-2 border border-white/20">
             <span className="text-[11px] font-black text-zinc-900 dark:text-white tracking-tight">
               {routeInfo.distKm < 1
@@ -644,7 +647,10 @@ export default function DrivoMap({
 
       {/* Map controls */}
       {mapReady && (
-        <div className="absolute top-[72px] left-3 flex flex-col gap-2 z-10">
+        <div
+          className="absolute left-3 flex flex-col gap-2 z-10"
+          style={{ top: "calc(72px + env(safe-area-inset-top, 0px))" }}
+        >
           {[
             {
               label: is3D ? "2D" : "3D",
