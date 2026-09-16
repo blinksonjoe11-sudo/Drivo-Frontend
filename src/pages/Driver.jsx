@@ -509,7 +509,7 @@ export default function Driver() {
         />
 
         {/* Top bar */}
-        <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 pointer-events-none">
+        <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 safe-top pointer-events-none">
           <button
             onClick={() => setSideOpen(true)}
             className="lg:hidden pointer-events-auto w-11 h-11 rounded-2xl flex items-center justify-center shadow-lg border border-white/20 text-zinc-700 dark:text-zinc-100 active:scale-95"
